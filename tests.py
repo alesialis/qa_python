@@ -52,7 +52,7 @@ class TestBooksCollector:
                 adult_books[book] = genre
         assert adult_books not in collector.get_books_for_children()
 
-    def test_add_book_in_favorites_doesnt_add_missing_book(self):
+    def test_add_book_in_favorites_does_not_add_missing_book(self):
         collector = BooksCollector()
         collector.books_genre = {
             "Гарри Поттер": "Фантастика",
